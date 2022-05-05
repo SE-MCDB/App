@@ -1,25 +1,2 @@
-<!DOCTYPE html>
-<html lang="en" id="htmlbody">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loading...</title>
-</head>
-<body>
-    <script>
-        var doc = document.getElementById('htmlbody');
-        xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-            if (this.readyState == 4) {
-                if (this.status == 200) {
-                    doc.innerHTML = this.responseText;
-                    doc.removeAttribute("id");
-                }
-                if (this.status == 404) doc.innerHTML = "Page not found.";
-            }
-        }
-        xhttp.open("GET", "index.html", true);
-        xhttp.send();
-    </script>
-</body>
-</html>
+<!DOCTYPE html><html lang=zh-CN><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><title>PaperDaily</title><script>var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') || CSS.supports('top: constant(a)'))
+            document.write('<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' + (coverSupport ? ', viewport-fit=cover' : '') + '" />')</script><link rel=stylesheet href=/static/index.a5c69d49.css></head><body><noscript><strong>Please enable JavaScript to continue.</strong></noscript><div id=app></div><script src=/static/js/chunk-vendors.a9816d2d.js></script><script src=/static/js/index.09b0e660.js></script></body></html>
